@@ -1,0 +1,147 @@
+body{
+    background-color: #E11364;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar{
+    background-color:#bc105c;
+    color:#ffffff;
+    text-align:center;
+    height:60px;
+    margin:20px 80px 40px 80px;
+    place-items: center;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    padding:10px 0px;
+    text-align:center;
+}
+
+.container{
+    background-color:#bc105c;
+    margin:20px 80px 40px 80px;
+    padding:0px 10px 40px 10px ;
+    border-radius: 5px;
+}
+
+.name-container{
+    color: white;
+    padding: 10px 0px 0px 0px;
+}
+
+h2{
+    font-weight:500px;
+    font-size: 20px;
+}
+
+/* MORTAL KOMBAT */
+
+.mkombat-container{
+    background-color: white;
+    padding:0px 10px 15px 10px ;
+    border-radius: 5px;
+}
+
+.mkombat-name{
+    text-align: right;
+    color: #bc105c;
+    margin:18px 0px;
+
+}
+
+h3{
+    font-size: large;
+    border-bottom: 2px dotted;
+    padding: 20px 0px 0px 0px;
+}
+
+
+
+#imagenes{
+    width: 100%;
+    height: auto;
+}
+
+.img_sec_container{
+    position: relative;
+    margin-left: 100px;
+}
+
+
+
+#imagenes_sec{
+    
+  
+    width: 40%;
+    height: auto;
+    margin: 15px 15px 15px 15px;
+    
+}
+
+p{
+    font-size: 15px;
+}
+
+.button-mkombat{
+    margin: 5px 5px 5px 5px;
+    
+}
+
+.precio{
+    background-color:white;
+    color: #2C8F20;
+    padding: 1px 5px;
+    width: 90px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+h4{
+    font-weight: bolder;
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+
+#button-comprar{
+    background-color:#2C8F20;
+    color: white;
+    padding: 10px 5px;
+    width: 90px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+#button-comprar:hover{
+    background-color:#668c62;
+    
+}
+
+#button-inicio{
+    background-color:#2C8F20;
+    color: white;
+    padding: 10px 5px;
+    width: 90px;
+    border-radius: 5px;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+#button-inicio:hover{
+    background-color:#668c62;
+    
+}
+
