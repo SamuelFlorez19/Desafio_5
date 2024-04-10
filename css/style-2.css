@@ -1,0 +1,242 @@
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;    
+}
+
+
+.topbar{
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url("https://source.unsplash.com/random/1600x900?video+games&sig=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    width: 1200px;
+    margin:20px 80px 40px 80px;
+}
+
+.tittle{
+    text-align: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background-color: #ffcdd2;
+    color: #333;
+    border-radius: 10px;    
+}
+
+.name-container{
+    text-align: center;
+    margin-bottom: 2rm;
+}
+
+.name-container h2 {
+    color: #333;
+    font-size: 2rem;
+    margin: 0;
+    text-transform: uppercase; 
+    margin-bottom: 2rem;   
+}
+
+/* MARIO KART */
+
+.mkart-container,
+.mkombat-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.mkart-container:hover,
+.mkombat-container:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3{
+    color: #333;
+    font-size: 1.5rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.mkart-container,
+.mkombat-container {
+    width: 48%;
+}
+
+.mkart-container {
+    float: left;
+}
+
+.mkombat-container {
+    float: right;
+}
+
+
+.mkart-name,
+.mkombat-name {
+    background-color: #C1FF87;
+    color: white;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+#imagenes{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    animation: pulse 2s infinite;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.img-mkart,
+.img-mkombat{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.dscription-mkart,
+.dscription-mkombat {
+    color: #333;
+    background-color: #f2f2f2;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    border-radius: 7px;
+    
+}
+
+.dscription-mkart p:first-child,
+.dscription-mkombat p:first-child {
+    font-weight: bold;
+}
+
+.dscription-mkart p:last-child,
+.dscription-mkombat p:last-child {
+    font-weight: bold;
+    color: #cf6bbe;
+}
+
+.button-mkart,
+.button-mkombat {
+    --color: #d688c9;
+    --color2: #d688c9c0;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0.8em 1.75em;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: var(--color);
+    width: 100px;
+    margin: 1rem auto;
+    
+}
+
+.button-mkart a,
+.button-mkombat a{
+    text-decoration: none;
+}
+
+.button-mkart::after, .button-mkart::before,
+.button-mkombat::after, .button-mkombat::before {        
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+
+.button-mkart::before,
+.button-mkombat::before{
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.button-mkart:hover::before,
+.button-mkombat:hover:before{
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.button-mkart:hover::after,
+.button-mkombat:hover::after{
+    transform: skew(45deg) translate(-50%, -50%);
+}
+
+.button-mkart:hover,
+.button-mkombat:hover{
+    color: var(--color2);
+}
+
+.button-mkart:active,
+.button-mkombat:active{
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+
+.derechos{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.derechos h4{
+    margin: 0;
+}
+
